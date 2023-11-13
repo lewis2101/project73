@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("./fonts/gothampro_bold.ttf");
+}
+@font-face {
+  font-family: "Monrope";
+  src: url("./fonts/Manrope.ttf");
+}
+:root {
+  --primary: #5CB86C;
+  --backGray: #F5F5F5;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--backGray);
+}
+#app {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 576px;
+  padding: 60px 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
